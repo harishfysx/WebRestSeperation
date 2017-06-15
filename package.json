@@ -10,6 +10,7 @@
   "author": "Brad Traversy",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "bcryptjs": "*",
     "body-parser": "*",
     "connect-flash": "*",
@@ -19,10 +20,14 @@
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
+    "lodash": "^4.17.4",
     "mongodb": "*",
     "mongoose": "*",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "request": "^2.81.0",
+    "superagent": "^3.5.2",
+    "validator": "^7.0.0"
   }
 }

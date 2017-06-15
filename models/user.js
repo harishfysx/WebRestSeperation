@@ -1,17 +1,22 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
+var validator = require('validator');
+var  _ = require('lodash');
 
 // User Schema
 var UserSchema = mongoose.Schema({
 	username: {
 		type: String,
-		index:true
+		index:true,
+		unique:true,
+		required :true
 	},
 	password: {
 		type: String
 	},
 	email: {
-		type: String
+		type: String,
+		unique:true
 	},
 	name: {
 		type: String
